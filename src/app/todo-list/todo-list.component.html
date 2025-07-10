@@ -1,0 +1,12 @@
+<div class="todo">
+    <div class="todo-container">
+        <input type="text" [(ngModel)]="task" placeholder="Add Task">
+        <button (click)="addTask()">Add</button>
+
+        <ul>
+            <li *ngFor="let t of tasks; index as i">
+                {{t}} <button (click)="deleteTask(i)">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>
