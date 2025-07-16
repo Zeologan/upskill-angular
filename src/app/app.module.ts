@@ -7,7 +7,13 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RestApiComponent } from './rest-api/rest-api.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
+import { FitlerComponent } from './fitler/fitler.component';
+import { FilterPipe } from './fitler/filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http'
     TodoListComponent,
     UserFormComponent,
     RestApiComponent,
+    ParentComponent,
+    ChildComponent,
+    NgclassComponent,
+    FitlerComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

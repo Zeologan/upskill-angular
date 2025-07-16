@@ -1,0 +1,5 @@
+<p>fitler works!</p>
+<input [(ngModel)] = 'search' placeholder="Search">
+<ul>
+    <li *ngFor=" let item of items | filter:search">{{item}}</li>
+</ul>
