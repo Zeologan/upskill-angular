@@ -10,6 +10,13 @@ import { RestApiComponent } from './rest-api/rest-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+<<<<<<< HEAD
+=======
+import { NgclassComponent } from './ngclass/ngclass.component';
+import { FitlerComponent } from './fitler/fitler.component';
+import { FilterPipe } from './fitler/filter.pipe';
+
+>>>>>>> 08e5178295db544457d55370eb96dd6d354a7a42
 
 @NgModule({
   declarations: [
@@ -19,6 +26,12 @@ import { ChildComponent } from './parent/child/child.component';
     RestApiComponent,
     ParentComponent,
     ChildComponent,
+<<<<<<< HEAD
+=======
+    NgclassComponent,
+    FitlerComponent,
+    FilterPipe
+>>>>>>> 08e5178295db544457d55370eb96dd6d354a7a42
   ],
   imports: [
     BrowserModule,

@@ -7,11 +7,15 @@ import { UserService } from './user.service';
   styleUrls: ['./rest-api.component.css']
 })
 export class RestApiComponent implements OnInit {
-  constructor(private user:UserService){}
-
-  users:any[] = [];
-  ngOnInit(){
-    this.user.getUser().subscribe(data => this.users = data)
+  constructor(private userService: UserService) { }
+  loading = false
+  users: any[] = [];
+  ngOnInit() {
+    this.loading = true
+    this.userService.getUser().subscribe(data => {
+      this.loading = false
+      this.users = data
+    })
   }
-  
+
 }

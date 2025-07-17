@@ -1,0 +1,5 @@
+<p>ngclass works!</p>
+<ul>
+    <li *ngFor="let Item of [1,2,3,4]; index as i" [ngClass]="{'selected' : selectedIndex === i}"
+        (click)="selectItem(i)">Item {{ i + 1 }}</li>
+</ul>
