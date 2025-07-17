@@ -7,7 +7,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RestApiComponent } from './rest-api/rest-api.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http'
     TodoListComponent,
     UserFormComponent,
     RestApiComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
