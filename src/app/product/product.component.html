@@ -1,0 +1,8 @@
+<p>product works!</p>
+
+<ul>
+    <li *ngFor="let product of paginatedProducts">{{product}}</li>
+</ul>
+
+<button (click)="prevPage()" [disabled] = "page === 1">Prev</button>
+<button (click)="nextPage()" [disabled] = "page * pageSize >= products.length">Next</button>
