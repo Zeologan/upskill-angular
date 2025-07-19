@@ -1,0 +1,6 @@
+<p>form works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input formControlName="email" placeholder="email">
+    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Invalid Email</div>
+    <button type="submit">Submit</button>
+</form>
